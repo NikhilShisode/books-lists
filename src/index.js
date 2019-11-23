@@ -6,7 +6,7 @@ import "./index.css";
 import App from "./App";
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_API_URL
+  uri: "https://books-lists-api.herokuapp.com/graphql"
 });
 
 ReactDOM.render(
