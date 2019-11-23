@@ -11,11 +11,11 @@ class BookList extends Component {
     };
   }
   displayBooks() {
-    const { loading, books } = this.props.data;
-    if (loading) {
+    const data = this.props.data;
+    if (data.loading) {
       return <div>Loading books...</div>;
     } else {
-      return books.map(book => (
+      return data.books.map(book => (
         <li
           key={book.id}
           onClick={e => {
